@@ -14,4 +14,4 @@ class UserRegistrationAPITestCase(APITestCase):
         }
         response = self.client.post(url, user_data)
         print(response.data)
-        self.assertEqual
+        self.assertEqual(response.data,{'message': '가입 완료!!'})
